@@ -45,7 +45,7 @@ router.get("/map", (req, res) => {
   let info = [{ name: "Korea", x_pos: 800, y_pos: 600 },
   { name: "USA", x_pos: 1400, y_pos: 300 }
   ];
-  console.log("hello");
+  console.log("this is for testing");
   res.render('map', { pos: info });
 });
 
