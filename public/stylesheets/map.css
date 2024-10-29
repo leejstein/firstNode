@@ -1,0 +1,166 @@
+.major-mono-display-regular 
+{
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+body
+{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+
+    background: black
+}
+img
+{
+    position: absolute;
+    width: 1600px;
+    height: 790px;
+    left: 160px;
+    top: 210px;
+}
+
+/*text*/
+div.web_title
+{
+    position: absolute;
+    width: 203;
+    height: 140;
+    left: 60px;
+    top: 19px;
+
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 100px;
+
+    color: #FFFFFF;
+}
+
+div.func_table
+{
+    position: absolute;
+    width: 241;
+    height: 65;
+    left: 295px;
+    top: 33px;
+
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+
+    color: #FFFFFF;
+}
+
+div.func_population
+{
+    position: absolute;
+    width: 482;
+    height: 65;
+    left: 610px;
+    top: 33px;
+
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+
+    color: #FFFFFF;
+}
+
+div.func_popularity
+{
+    position: absolute;
+    width: 482;
+    height: 65;
+    left: 1225px;
+    top: 33px;
+
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+
+    color: #ffffff;
+}
+/*text*/
+
+hr {
+    width : 95%;
+    height : 5px;
+    background-color : white;
+    border : 0;
+    border-radius: 3px;
+    position: relative;
+    top: 138px;
+  }
+
+.popup
+{
+    width: 400px;
+    background: white;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    outline: auto;
+    outline-color: black;
+    padding: 0 30px 30px;
+    color: #ffffff;
+    visibility: hidden;
+}
+.open-popup
+{
+    visibility: visible;
+}
+.popup h1
+{
+    color: black;
+    font-size: 50px;
+    font-family: fangsong;
+}
+.popup h2
+{
+    color:black;
+    font-size: 30px;
+    font-family: fangsong;
+}
+.popup button
+{
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: black;
+    border: 1;
+    outline: none;
+    font-size: 20px;
+    font-family: fangsong;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*button*/
+button
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    position: absolute;
+    color: #FFFFFF;
+}
+.korea
+{
+    left: 230px;
+    top: 450px;
+
+}

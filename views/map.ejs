@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+    </style>
+    <link rel="stylesheet" href="stylesheets/map.css">
+</head>
+
+<body>
+
+    <div class="web_title">WM</div>
+    <div class="func_table">table</div>
+    <div class="func_population">population</div>
+    <div class="func_popularity" id="popularity">popularity</div>
+    <div>
+        <img src="images/WorldMap.png" alt="Worldmap">
+        <script>console.log(<%=pos.length %>);</script>
+
+        <% for(let idx=0; idx < pos.length; idx++) { %>
+            <button style="position:absolute; left:<%=pos[idx].x_pos%>px; top:<%=pos[idx].y_pos%>px;">
+                <%= pos[idx].name %>
+            </button>
+            <% } %>
+    </div>
+    <!--선-->
+    <hr>
+
+    <div class="container">
+        <div class="popup" id="popup">
+            <h1 id="country_name">America</h1>
+            <h2 id="population">52</h2>
+            <h2 id="popularity">52</h2>
+            <button onclick="closePopup()">close</button>
+        </div>
+    </div>
+
+    <script>
+        function getInfo(nat) {
+            var request = new XMLHttpRequest();
+            request.open('GET', '/data/' + nat);
+            request.send();
+            request.onload = function () {
+                let data = JSON.parse(request.response);
+                console.log(data);
+                document.getElementById('country_name').innerHTML = data[0].population;
+            }
+        }
+
+        let popup = document.getElementById("popup");
+
+        function Hidepopup() {
+
+        }
+    </script>
+</body>
+
+</html>
